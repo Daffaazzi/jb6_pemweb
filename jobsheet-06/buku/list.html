@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KameraHub | Daftar Kamera 📷</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>KameraHub</h1>
+        <button type="button" id="nav-toggle-btn" class="nav-toggle-label" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">&#9776;</button>
+        <nav id="main-nav" aria-label="Navigasi utama">
+            <ul>
+                <li><a href="../login.html">Login 🔐</a></li>
+                <li><a href="../index.html">Beranda 🏠</a></li>
+                <li><a href="list.html" aria-current="page">Daftar Kamera 📷</a></li>
+                <li><a href="tambah.html">Tambah Kamera ➕</a></li>
+                <li><a href="../anggota/list.html">Daftar Anggota 👥</a></li>
+                <li><a href="../anggota/tambah.html">Tambah Anggota ➕</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Daftar Kamera 📷</h2>
+            <div class="search-box">
+                <label for="search-input">Cari Kamera</label>
+                <input type="text" id="search-input" placeholder="Ketik merek atau model..."><!-- maybe placeholder -->
+            </div>
+            <p id="loading-indicator" role="status" hidden>Memuat data...</p>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Model</th>
+                            <th scope="col">Merek</th>
+                            <th scope="col">Tahun</th>
+                            <th scope="col">Stok</th>
+                            <th scope="col">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Baris diisi dinamis oleh assets/js/buku.js via fetch('../data/buku.json') -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KameraHub &mdash; Jobsheet 6</p>
+    </footer>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/buku.js"></script>
+</body>
+</html>

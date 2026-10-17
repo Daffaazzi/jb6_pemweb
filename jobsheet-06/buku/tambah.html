@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KameraHub | Tambah Kamera ➕</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>KameraHub</h1>
+        <button type="button" id="nav-toggle-btn" class="nav-toggle-label" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">&#9776;</button>
+        <nav id="main-nav" aria-label="Navigasi utama">
+            <ul>
+                <li><a href="../login.html">Login 🔐</a></li>
+                <li><a href="../index.html">Beranda 🏠</a></li>
+                <li><a href="list.html">Daftar Kamera 📷</a></li>
+                <li><a href="tambah.html" aria-current="page">Tambah Kamera ➕</a></li>
+                <li><a href="../anggota/list.html">Daftar Anggota 👥</a></li>
+                <li><a href="../anggota/tambah.html">Tambah Anggota ➕</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tambah Kamera ➕</h2>
+            <form action="#" method="post" id="form-tambah" novalidate>
+                <p>
+                    <label for="judul">Model Kamera</label>
+                    <input type="text" id="judul" name="judul" required>
+                </p>
+                <p>
+                    <label for="pengarang">Merek</label>
+                    <input type="text" id="pengarang" name="pengarang" required>
+                </p>
+                <p>
+                    <label for="tahun">Tahun Produksi</label>
+                    <input type="number" id="tahun" name="tahun" min="1900" max="2026" required>
+                </p>
+                <p>
+                    <label for="isbn">Nomor Seri</label>
+                    <input type="text" id="isbn" name="isbn">
+                </p>
+                <p>
+                    <label for="stok">Stok</label>
+                    <input type="number" id="stok" name="stok" min="0" required>
+                </p>
+                <p>
+                    <label for="kategori">Kategori</label>
+                    <select id="kategori" name="kategori">
+                        <option value="mirrorless">Mirrorless</option>
+                        <option value="dslr">DSLR</option>
+                        <option value="lensa">Lensa</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Simpan 💾</button>
+                </p>
+            </form>
+                <p id="form-status" role="status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 KameraHub &mdash; Jobsheet 6</p>
+    </footer>
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

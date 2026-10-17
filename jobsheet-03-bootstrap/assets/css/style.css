@@ -1,0 +1,46 @@
+/* Override kecil di atas Bootstrap: warna brand SIMPUS-Mini (#1d5b8a) */
+
+.navbar-brand-bg {
+    background-color: #1d5b8a;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #d9e8f5 !important;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.text-brand {
+    color: #1d5b8a;
+}
+
+.stat-box {
+    background-color: #eef4fa;
+}
+
+/* Header tabel: Bootstrap 5.3 mewarnai sel lewat variabel, jadi override variabelnya */
+.thead-brand {
+    --bs-table-bg: #1d5b8a;
+    --bs-table-color: #fff;
+    --bs-table-border-color: #1d5b8a;
+}
+
+.btn-brand {
+    background-color: #1d5b8a;
+    color: #fff;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: #164869;
+    color: #fff;
+}

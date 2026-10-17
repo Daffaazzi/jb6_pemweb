@@ -1,0 +1,14 @@
+[
+    {"tipe": "Canon EOS R6", "merek": "Canon", "tahun": 2021, "stok": 2},
+    {"tipe": "Sony A7 III", "merek": "Sony", "tahun": 2018, "stok": 3},
+    {"tipe": "Nikon Z6 II", "merek": "Nikon", "tahun": 2020, "stok": 2},
+    {"tipe": "Fujifilm X-T4", "merek": "Fujifilm", "tahun": 2020, "stok": 1},
+    {"tipe": "Canon EF 50mm f/1.8", "merek": "Canon", "tahun": 2017, "stok": 4},
+    {"tipe": "Sigma 24-70mm f/2.8", "merek": "Sigma", "tahun": 2019, "stok": 2},
+    {"tipe": "Sony 24-105mm f/4", "merek": "Sony", "tahun": 2021, "stok": 3},
+    {"tipe": "Tamron 70-200mm f/2.8", "merek": "Tamron", "tahun": 2022, "stok": 1},
+    {"tipe": "Nikon 35mm f/1.8", "merek": "Nikon", "tahun": 2018, "stok": 2},
+    {"tipe": "Canon EOS M50 Mark II", "merek": "Canon", "tahun": 2020, "stok": 2},
+    {"tipe": "Olympus OM-5", "merek": "Olympus", "tahun": 2022, "stok": 1},
+    {"tipe": "Leica Q2", "merek": "Leica", "tahun": 2023, "stok": 1}
+]

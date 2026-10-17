@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KameraHub | Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="login-page-body">
+    <main class="login-page">
+        <section class="login-card">
+            <div class="login-header">
+                <h1>📸 KameraHub</h1>
+                <p>Silakan masuk untuk mengakses sistem peminjaman kamera</p>
+                <p>Username: user admin | Password: admin123</p>
+            </div>
+
+
+            <form id="login-form" class="login-form" action="#" method="post" novalidate>
+                <p>
+                    <label for="username">👤 Username</label>
+                    <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+                </p>
+                <p>
+                    <label for="password">🔒 Password</label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+                </p>
+                <button type="submit">🔐 Masuk</button>
+                <p id="login-status" class="login-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        const loginForm = document.getElementById("login-form");
+        const loginStatus = document.getElementById("login-status");
+
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            if (!username || !password) {
+                loginStatus.textContent = "⚠️ Username dan password wajib diisi.";
+                loginStatus.style.color = "#d9534f";
+                return;
+            }
+
+            if (username === "user admin" && password === "admin123") {
+                loginStatus.textContent = "✅ Login berhasil. Mengalihkan ke beranda...";
+                loginStatus.style.color = "#2e7d32";
+                setTimeout(function () {
+                    window.location.href = "index.html";
+                }, 800);
+            } else {
+                loginStatus.textContent = "❌ Username atau password salah.";
+                loginStatus.style.color = "#d9534f";
+            }
+        });
+    </script>
+</body>
+</html>
